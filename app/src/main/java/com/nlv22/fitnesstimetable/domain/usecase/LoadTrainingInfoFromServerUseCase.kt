@@ -9,10 +9,10 @@ class LoadTrainingInfoFromServerUseCase @Inject constructor(private val repo: Tr
 
     suspend operator fun invoke() = sortByDateAndTimeTrainingInfo(repo.loadTrainingInfo())
 
+    /** сортировка загруженных данных по дате и времени **/
     private fun sortByDateAndTimeTrainingInfo(data: TrainingInfo): TrainingInfo {
         val lessons = data.lessons
 
-        /** сортировка загруженных данных по дате и времени **/
         data.lessons = lessons.sortedWith(
             compareBy({
                 DateTimeManager.getDate(it.date)
