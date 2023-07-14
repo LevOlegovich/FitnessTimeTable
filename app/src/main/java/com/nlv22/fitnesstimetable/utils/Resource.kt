@@ -1,6 +1,6 @@
 package com.nlv22.fitnesstimetable.utils
 
-
+/** Используется как тип данных в LiveData и для отслеживания статуса загрузки **/
 sealed class Resource<T>(
     val data: T? = null,
     val message: String? = null
