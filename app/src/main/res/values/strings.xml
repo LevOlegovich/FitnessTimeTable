@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FitnessTimeTable</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lessons">Занятия</string>
+    <string name="requests">Заявки</string>
+    <string name="add">Добавить</string>
+    <string name="chat">Чат</string>
+    <string name="more">Еще</string>
+</resources>
